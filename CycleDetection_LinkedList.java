@@ -9,6 +9,7 @@
  *     }
  * }
  */
+// Question link: https://leetcode.com/problems/linked-list-cycle/
 public class Solution {
     public boolean hasCycle(ListNode head) {
         ListNode fast = head;
