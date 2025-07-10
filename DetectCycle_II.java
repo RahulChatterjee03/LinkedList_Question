@@ -23,10 +23,7 @@ public class Solution {
                 ListNode entry = head;
                 while(entry != slow){
                     entry = entry.next;
-                    slow = slow.next;/*  Step 2: Finding the start of the cycle
-Once slow and fast meet inside the cycle, the key idea is:
-
-From the head of the list, and from the meeting point inside the cycle, if we move one pointer from each of those positions one step at a time, they will meet at the start of the cycle.*/
+                    slow = slow.next; 
                 }
                 return entry;
             }
@@ -35,3 +32,7 @@ From the head of the list, and from the meeting point inside the cycle, if we mo
     }
 
 }
+
+/*  Step 2: Finding the start of the cycle Once slow and fast meet inside the cycle, the key idea is: From the head of the list, 
+and from the meeting point inside the cycle, if we move one pointer from each of those positions one step at a time, they will meet at the start 
+of the cycle.*/
